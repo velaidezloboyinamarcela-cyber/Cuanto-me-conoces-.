@@ -16,7 +16,7 @@ const preguntas = [
         opciones: [
             { letra: "a", texto: "Ocho" },
             { letra: "b", texto: "Tres" },
-            { letra: "c", texto: "Seis" }
+            { letra: "c", texto: "Cinco" }
         ],
         correcta: "c"
     },
