@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué tanto me conoces? ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fondo decorativo con formas orgánicas y destellos -->
+    <div class="fondo-magico">
+        <div class="burbuja b1"></div>
+        <div class="burbuja b2"></div>
+        <div class="burbuja b3"></div>
+        
+        <!-- Dibujos flotantes en el fondo -->
+        <svg class="deco-svg estrella-1" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" fill="#D5C6F7"/>
+        </svg>
+        <svg class="deco-svg estrella-2" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" fill="#F3C6E8"/>
+        </svg>
+        <svg class="deco-svg nube-1" viewBox="0 0 64 40" fill="none">
+            <path d="M16 36H50C56.6274 36 62 30.6274 62 24C62 17.7176 57.1726 12.5621 51.0218 12.0436C48.723 5.05188 42.1525 0 34.4 0C25.5634 0 18.2735 6.60987 17.1529 15.1492C16.7745 15.0518 16.393 15 16 15C9.37258 15 4 20.3726 4 27C4 31.9706 7.02944 36 12 36H16Z" fill="#FFFFFF" fill-opacity="0.7"/>
+        </svg>
+    </div>
+
+    <main class="container">
+        <!-- Sticker superior decorativo -->
+        <div class="sticker-superior">✨ EDICIÓN ESPECIAL ✨</div>
+
+        <!-- Pantalla 1: Bienvenida -->
+        <section id="pantalla-inicio" class="pantalla activa">
+            <!-- Ilustración principal: Gatito/Corazón mágico -->
+            <div class="ilustracion-hero">
+                <svg width="110" height="110" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="52" fill="#F3ECFF" stroke="#D7C4FF" stroke-width="3" stroke-dasharray="6 6"/>
+                    <!-- Orejas -->
+                    <path d="M32 48L28 24L50 36" fill="#E3D2FF" stroke="#8C6AD9" stroke-width="3" stroke-linejoin="round"/>
+                    <path d="M88 48L92 24L70 36" fill="#E3D2FF" stroke="#8C6AD9" stroke-width="3" stroke-linejoin="round"/>
+                    <!-- Carita -->
+                    <ellipse cx="60" cy="64" rx="34" ry="28" fill="#FFFFFF" stroke="#8C6AD9" stroke-width="3"/>
+                    <!-- Mejillas -->
+                    <ellipse cx="42" cy="68" rx="6" ry="3.5" fill="#FFC8E2"/>
+                    <ellipse cx="78" cy="68" rx="6" ry="3.5" fill="#FFC8E2"/>
+                    <!-- Ojitos -->
+                    <circle cx="46" cy="58" r="3.5" fill="#4A357A"/>
+                    <circle cx="74" cy="58" r="3.5" fill="#4A357A"/>
+                    <circle cx="47" cy="57" r="1.2" fill="#FFFFFF"/>
+                    <circle cx="75" cy="57" r="1.2" fill="#FFFFFF"/>
+                    <!-- Nariz y boca -->
+                    <path d="M57 65L60 68L63 65" stroke="#8C6AD9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M54 71C56 73 59 73 60 70C61 73 64 73 66 71" stroke="#8C6AD9" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Destellos -->
+                    <path d="M98 30L100 35L105 37L100 39L98 44L96 39L91 37L96 35L98 30Z" fill="#B695F8"/>
+                    <path d="M18 76L19.5 80L23.5 81.5L19.5 83L18 87L16.5 83L12.5 81.5L16.5 80L18 76Z" fill="#F4A7D6"/>
+                </svg>
+            </div>
+
+            <h1>¿Qué tanto me conoces?</h1>
+            <p class="subtitulo">Demuestra si eres de mi círculo VIP respondiendo estas 10 preguntas sobre mí.</p>
+            
+            <form id="form-registro">
+                <div class="campo">
+                    <label for="nombre">🌷 ¿Cómo te llamas?</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre bonito..." autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="parentesco">💌 ¿Qué eres mío?</label>
+                    <input type="text" id="parentesco" placeholder="Ej. Mejor amig@, Prim@, Amor..." autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="tiempo">⏳ ¿Hace cuánto me conoces?</label>
+                    <input type="text" id="tiempo" placeholder="Ej. Desde niños, 2 años..." autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn-principal">
+                    <span>¡Empezar el reto!</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </form>
+        </section>
+
+        <!-- Pantalla 2: Preguntas -->
+        <section id="pantalla-quiz" class="pantalla">
+            <div class="header-quiz">
+                <span id="saludo-jugador" class="badge-jugador"></span>
+                <span id="progreso" class="badge-progreso">1 / 10</span>
+            </div>
+            
+            <div class="barra-progreso">
+                <div id="barra-relleno"></div>
+            </div>
+
+            <!-- Dibujo dinámico que cambia en cada pregunta -->
+            <div id="dibujo-pregunta" class="dibujo-dinamico"></div>
+
+            <h2 id="texto-pregunta">Pregunta</h2>
+            
+            <div id="contenedor-opciones" class="opciones"></div>
+
+            <div id="feedback" class="feedback oculto"></div>
+            <button id="btn-siguiente" class="btn-principal oculto">
+                <span>Siguiente pregunta</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </section>
+
+        <!-- Pantalla 3: Resultados -->
+        <section id="pantalla-resultados" class="pantalla">
+            <!-- Ilustración de trofeo/corona pastel -->
+            <div class="ilustracion-hero">
+                <svg width="100" height="100" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="50" fill="#F5EEFF" stroke="#D5C2FF" stroke-width="3"/>
+                    <path d="M30 78L24 44L46 58L60 36L74 58L96 44L90 78H30Z" fill="#E2D0FF" stroke="#8C6AD9" stroke-width="3" stroke-linejoin="round"/>
+                    <rect x="30" y="78" width="60" height="10" rx="5" fill="#FFFFFF" stroke="#8C6AD9" stroke-width="3"/>
+                    <circle cx="24" cy="40" r="4" fill="#F7A8D8"/>
+                    <circle cx="60" cy="31" r="5" fill="#B592FF"/>
+                    <circle cx="96" cy="40" r="4" fill="#F7A8D8"/>
+                    <path d="M56 66L60 70L64 66" stroke="#8C6AD9" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h1>¡Encuesta terminada!</h1>
+            <p id="resumen-usuario" class="datos-finales"></p>
+            
+            <div class="marcador">
+                <div class="caja-punto correcta">
+                    <div class="icono-mini">✨</div>
+                    <span id="total-correctas">0</span>
+                    <small>Aciertos</small>
+                </div>
+                <div class="caja-punto incorrecta">
+                    <div class="icono-mini">💔</div>
+                    <span id="total-incorrectas">0</span>
+                    <small>Fallos</small>
+                </div>
+            </div>
+
+            <div id="veredicto" class="veredicto"></div>
+            <p class="gracias">✦ GRACIAS POR PARTICIPAR ✦</p>
+            <button id="btn-reiniciar" class="btn-secundario">🔄 Volver a jugar</button>
+        </section>
+    </main>
+
+    <!-- Librería ligera para lluvia de confeti pastel -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
